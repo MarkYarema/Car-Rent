@@ -797,6 +797,7 @@ p {
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin-bottom: 108px;
 }
 
 .footer__logo {
@@ -840,10 +841,35 @@ p {
 .footer__info::after {
   content: "";
   position: absolute;
-  bottom: -1px;
+  bottom: -60px;
   display: block;
   width: 100%;
   height: 1px;
   background-color: rgba(19, 19, 19, 0.16);
   border-radius: 2px;
+}
+
+.footer__end {
+  display: flex;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 200%;
+  letter-spacing: -0.01em;
+  color: #131313;
+}
+
+.end__link {
+  display: flex;
+  gap: 60px;
+  margin-left: auto;
+}
+
+.end__link a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 200%;
+  letter-spacing: -0.01em;
+  color: #131313;
+  text-decoration: none;
 }
