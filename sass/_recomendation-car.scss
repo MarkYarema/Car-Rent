@@ -1,0 +1,36 @@
+.recomendation-car {
+  width: 1016px;
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.recomendation-car h3 {
+  color: var(--accent-color);
+}
+
+.recomendation-car__styles {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 38px;
+  margin-top: 38px;
+}
+
+.styles-crv {
+  margin-bottom: 43px;
+  margin-top: 43px;
+}
+
+.recomendation-car__background {
+  width: 264px;
+  height: 66px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  position: absolute;
+  top: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.background__crv {
+  top: 51px;
+}

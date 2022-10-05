@@ -1,0 +1,77 @@
+:root {
+  --primary-text-color: #3d5278;
+  --secondary-text-color: #1a202c;
+  --accent-color: #3563e9;
+}
+
+/* Car-Rent */
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  letter-spacing: -0.02em;
+  color: #3d5278;
+}
+
+.list {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  padding: 32px;
+  width: 1440px;
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  color: var(--secondary-text-color);
+}
+
+.header__logo-img {
+  width: 32px;
+  height: 32px;
+}
+
+.header__link {
+  margin-right: 8px;
+  height: 32px;
+}
+.header__text {
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 125%;
+  color: #666666;
+}
+
+.header__text span {
+  margin-left: 8px;
+  color: #000;
+}
