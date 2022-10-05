@@ -33,75 +33,76 @@
     </header>
     <main>
       <!-- main nav -->
-      <nav class="nav">
-        <div class="container nav__container">
-          <a href="index.html" class="nav__logo">morent</a>
-          <form class="nav__form">
-            <label for="">
-              <div class="nav_input">
-                <input
-                  type="search"
-                  name="search"
-                  placeholder="Search something here"
-                />
-                <svg class="nav__search">
-                  <use
-                    href="./image/icon.svg#icon-search"
-                    width="24px"
-                    height="24px"
-                  ></use>
-                </svg>
-                <svg class="nav__filter">
-                  <use
-                    href="./image/icon.svg#icon-filter"
-                    width="24px"
-                    height="24px"
-                  ></use>
-                </svg>
-              </div>
-            </label>
-          </form>
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a href="">
-                <svg class="nav__icon">
-                  <use
-                    href="./image/icon.svg#icon-heart"
-                    width="24px"
-                    height="24px"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href=""
-                ><svg class="nav__icon">
-                  <use
-                    href="./image/icon.svg#icon-notification"
-                    width="24px"
-                    height="24px"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href=""
-                ><svg class="nav__icon">
-                  <use
-                    href="./image/icon.svg#icon-setting"
-                    width="24px"
-                    height="24px"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href=""><img src="./image/Profil.jpg" alt="profil" /></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
+      <section>
+        <nav class="nav">
+          <div class="container nav__container">
+            <a href="index.html" class="nav__logo">morent</a>
+            <form class="nav__form">
+              <label for="">
+                <div class="nav_input">
+                  <input
+                    type="search"
+                    name="search"
+                    placeholder="Search something here"
+                  />
+                  <svg class="nav__search">
+                    <use
+                      href="./image/icon.svg#icon-search"
+                      width="24px"
+                      height="24px"
+                    ></use>
+                  </svg>
+                  <svg class="nav__filter">
+                    <use
+                      href="./image/icon.svg#icon-filter"
+                      width="24px"
+                      height="24px"
+                    ></use>
+                  </svg>
+                </div>
+              </label>
+            </form>
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a href="">
+                  <svg class="nav__icon">
+                    <use
+                      href="./image/icon.svg#icon-heart"
+                      width="24px"
+                      height="24px"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href=""
+                  ><svg class="nav__icon">
+                    <use
+                      href="./image/icon.svg#icon-notification"
+                      width="24px"
+                      height="24px"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href=""
+                  ><svg class="nav__icon">
+                    <use
+                      href="./image/icon.svg#icon-setting"
+                      width="24px"
+                      height="24px"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href=""><img src="./image/Profil.jpg" alt="profil" /></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
       <!-- content_nav -->
 
       <div class="content">
@@ -591,9 +592,427 @@
               </svg>
             </button>
           </section>
+          <!-- recent-car -->
+          <section class="recent-car">
+            <div class="recent-car__header">
+              <h3 class="recent-car__title">Recent Car</h3>
+              <a href="" class="recent-car__link">View All</a>
+            </div>
+            <ul class="recent-car__list list">
+              <li class="recent-car__item">
+                <h4 class="item-car__title">Koenigsegg</h4>
+                <p class="item-car__text">Sport</p>
+                <svg class="curent-car__like">
+                  <use
+                    href="./image/icon.svg#icon-like"
+                    width="24px"
+                    height="24px"
+                  ></use>
+                </svg>
+                <div class="recent-car__styles">
+                  <img
+                    src="./image/Koenigsegg.png"
+                    alt="Koenigsegg"
+                    width="272px"
+                    height="84px"
+                  />
+                  <div class="recent-car__background"></div>
+                </div>
+                <ul class="recent-car__informatoin list">
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-gas"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>90L</p>
+                  </li>
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-Car"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>Manual</p>
+                  </li>
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-people"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>2 People</p>
+                  </li>
+                </ul>
+                <div class="recent-car__final">
+                  <p class="recent-car__text">$99.00/ <span>day</span></p>
+                  <button type="button" class="recent-car__btn">
+                    Rent Now
+                  </button>
+                </div>
+              </li>
+              <li class="recent-car__item">
+                <h4 class="item-car__title">Nissan GT - R</h4>
+                <p class="item-car__text">Sport</p>
+                <svg class="curent-car__like">
+                  <use
+                    href="./image/icon.svg#icon-nofill-heart"
+                    width="24px"
+                    height="24px"
+                  ></use>
+                </svg>
+                <div class="recent-car__styles styles-gtr">
+                  <img
+                    src="./image/gtr.png"
+                    alt="Nissan GT - R"
+                    width="228px"
+                    height="72px"
+                  />
+                  <div class="recent-car__background background__gtr"></div>
+                </div>
+                <ul class="recent-car__informatoin list">
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-gas"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>80L</p>
+                  </li>
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-Car"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>Manual</p>
+                  </li>
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-people"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>2 People</p>
+                  </li>
+                </ul>
+                <div class="recent-car__final">
+                  <p class="recent-car__text">
+                    $80.00/ <span>day</span
+                    ><span class="old-price">$100.00</span>
+                  </p>
+                  <button type="button" class="recent-car__btn">
+                    Rent Now
+                  </button>
+                </div>
+              </li>
+              <li class="recent-car__item">
+                <h4 class="item-car__title">Rolls-Royce</h4>
+                <p class="item-car__text">Sport</p>
+                <svg class="curent-car__like">
+                  <use
+                    href="./image/icon.svg#icon-nofill-heart"
+                    width="24px"
+                    height="24px"
+                  ></use>
+                </svg>
+                <div class="recent-car__styles styles-rr">
+                  <img
+                    src="./image/Rolls-Royce.png"
+                    alt="Rolls-Royce"
+                    width="244px"
+                    height="76px"
+                  />
+                  <div class="recent-car__background background__rr"></div>
+                </div>
+                <ul class="recent-car__informatoin list">
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-gas"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>70L</p>
+                  </li>
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-Car"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>Manual</p>
+                  </li>
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-people"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>4 People</p>
+                  </li>
+                </ul>
+                <div class="recent-car__final">
+                  <p class="recent-car__text">$96.00/ <span>day</span></p>
+                  <button type="button" class="recent-car__btn">
+                    Rent Now
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <!-- Recomendation Car -->
+          <section class="recomendation-car">
+            <div class="recent-car__header">
+              <h3 class="recent-car__title">Recomendation Car</h3>
+              <a href="" class="recent-car__link">View All</a>
+            </div>
+            <ul class="recent-car__list list">
+              <li class="recent-car__item">
+                <h4 class="item-car__title">All New Rush</h4>
+                <p class="item-car__text">SUV</p>
+                <svg class="curent-car__like">
+                  <use
+                    href="./image/icon.svg#icon-nofill-heart"
+                    width="24px"
+                    height="24px"
+                  ></use>
+                </svg>
+                <div class="recomendation-car__styles">
+                  <img
+                    src="./image/All New Rush.png"
+                    alt="All New Rush"
+                    width="252px"
+                    height="112px"
+                  />
+                  <div class="recomendation-car__background"></div>
+                </div>
+                <ul class="recent-car__informatoin list">
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-gas"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>70L</p>
+                  </li>
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-Car"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>Manual</p>
+                  </li>
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-people"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>6 People</p>
+                  </li>
+                </ul>
+                <div class="recent-car__final">
+                  <p class="recent-car__text">
+                    $72.00/ <span>day</span
+                    ><span class="old-price">$80.00</span>
+                  </p>
+                  <button type="button" class="recent-car__btn">
+                    Rent Now
+                  </button>
+                </div>
+              </li>
+              <li class="recent-car__item">
+                <h4 class="item-car__title">CR - V</h4>
+                <p class="item-car__text">SUV</p>
+                <svg class="curent-car__like">
+                  <use
+                    href="./image/icon.svg#icon-like"
+                    width="24px"
+                    height="24px"
+                  ></use>
+                </svg>
+                <div class="recomendation-car__styles styles-crv">
+                  <img
+                    src="./image/CR  - V.png"
+                    alt="CR  - V"
+                    width="254px"
+                    height="102px"
+                  />
+                  <div
+                    class="recomendation-car__background background__crv"
+                  ></div>
+                </div>
+                <ul class="recent-car__informatoin list">
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-gas"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>80L</p>
+                  </li>
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-Car"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>Manual</p>
+                  </li>
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-people"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>6 People</p>
+                  </li>
+                </ul>
+                <div class="recent-car__final">
+                  <p class="recent-car__text">$80.00/ <span>day</span></p>
+                  <button type="button" class="recent-car__btn">
+                    Rent Now
+                  </button>
+                </div>
+              </li>
+              <li class="recent-car__item">
+                <h4 class="item-car__title">All New Terios</h4>
+                <p class="item-car__text">SUV</p>
+                <svg class="curent-car__like">
+                  <use
+                    href="./image/icon.svg#icon-nofill-heart"
+                    width="24px"
+                    height="24px"
+                  ></use>
+                </svg>
+                <div class="recomendation-car__styles">
+                  <img
+                    src="./image/All New Terios.png"
+                    alt="Rolls-Royce"
+                    width="252px"
+                    height="112px"
+                  />
+                  <div class="recomendation-car__background"></div>
+                </div>
+                <ul class="recent-car__informatoin list">
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-gas"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>90L</p>
+                  </li>
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-Car"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>Manual</p>
+                  </li>
+                  <li class="car-information__list">
+                    <svg>
+                      <use
+                        href="./image/icon.svg#icon-people"
+                        width="24px"
+                        height="24px"
+                      ></use>
+                    </svg>
+                    <p>6 People</p>
+                  </li>
+                </ul>
+                <div class="recent-car__final">
+                  <p class="recent-car__text">$74.00/ <span>day</span></p>
+                  <button type="button" class="recent-car__btn">
+                    Rent Now
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </section>
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container footer__container">
+        <div class="footer__info">
+          <div class="footer__logo">
+            <a href="index.html" class="nav__logo">morent</a>
+            <p class="footer__logo-text">
+              Our vision is to provide convenience and help increase your sales
+              business.
+            </p>
+          </div>
+          <ul class="footer__list list">
+            <li>
+              <h4>About</h4>
+              <ul class="footer_link list">
+                <li><a href="">How it works</a></li>
+                <li><a href="">Featured</a></li>
+                <li><a href="">Partnership</a></li>
+                <li><a href="">Bussiness Relation</a></li>
+              </ul>
+            </li>
+            <li>
+              <h4>Community</h4>
+              <ul class="footer_link list">
+                <li><a href="">Events</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Podcast</a></li>
+                <li><a href="">Invite a friend</a></li>
+              </ul>
+            </li>
+            <li>
+              <h4>Socials</h4>
+              <ul class="footer_link list">
+                <li><a href="">Discord</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Facebook</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <p>2022 MORENT. All rights reserved</p>
+        <p>PrivacyPolicy</p>
+        <p>TermsCondition</p>
+      </div>
+    </footer>
   </body>
 </html>
