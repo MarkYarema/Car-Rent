@@ -9,7 +9,7 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 200%;
+  line-height: 40px;
   letter-spacing: -0.02em;
   color: #3d5278;
 }
@@ -482,6 +482,11 @@ p {
 .main-information {
   padding: 32px;
 }
+@media screen and (max-width: 375px) {
+  .main-information {
+    padding: 32px 24px 24px 24px;
+  }
+}
 
 .curent-car {
   display: -webkit-box;
@@ -527,7 +532,7 @@ p {
   max-width: 372px;
   font-weight: 600;
   font-size: 32px;
-  line-height: 120%;
+  line-height: 38px;
   letter-spacing: -0.01em;
   color: #fff;
 }
@@ -626,7 +631,7 @@ p {
 }
 @media screen and (max-width: 375px) {
   .curent-car__detail {
-    max-width: 375px;
+    max-width: 327px;
     margin-left: 0;
     padding: 16px;
     margin-top: 32px;
@@ -727,6 +732,14 @@ p {
 .curent-car_text {
   margin-top: 32px;
 }
+@media screen and (max-width: 375px) {
+  .curent-car_text {
+    margin-top: 16px;
+    font-size: 12px;
+    max-width: 295px;
+    line-height: 24px;
+  }
+}
 
 .spesification {
   display: -webkit-box;
@@ -736,6 +749,14 @@ p {
   margin-top: 32px;
   margin-bottom: 68px;
 }
+@media screen and (max-width: 375px) {
+  .spesification {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    gap: 47px;
+    max-width: 295px;
+  }
+}
 
 .spesification__list {
   display: -webkit-box;
@@ -743,9 +764,19 @@ p {
   display: flex;
   gap: 16px;
 }
+@media screen and (max-width: 375px) {
+  .spesification__list {
+    gap: 24px;
+  }
+}
 
 .spesification__list li {
-  width: 92px;
+  max-width: 92px;
+}
+@media screen and (max-width: 375px) {
+  .spesification__list li {
+    max-width: 52px;
+  }
 }
 
 .spesification__type p {
@@ -753,6 +784,16 @@ p {
   font-size: 20px;
   letter-spacing: -0.02em;
   color: #39485e;
+}
+@media screen and (max-width: 375px) {
+  .spesification__type p {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.01em;
+  }
+  .spesification__type p:first-child {
+    margin-bottom: 16px;
+  }
 }
 
 .choice p {
@@ -767,14 +808,23 @@ p {
   letter-spacing: -0.02em;
   color: #3d5278;
 }
+@media screen and (max-width: 375px) {
+  .choice p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .choice p:first-child {
+    margin-bottom: 16px;
+  }
+}
 
 .price-information {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .new-price {
@@ -783,12 +833,24 @@ p {
   line-height: 35px;
   color: #1a202c;
 }
+@media screen and (max-width: 375px) {
+  .new-price {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
 
 .new-price span {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #39485e;
+}
+@media screen and (max-width: 375px) {
+  .new-price span {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .old-price {
@@ -797,6 +859,7 @@ p {
 }
 
 .rent-btn {
+  margin-left: auto;
   width: 140px;
   height: 56px;
   background-color: #3563e9;
@@ -808,13 +871,19 @@ p {
   font-size: 16px;
   line-height: 20px;
 }
-
 .respound {
   margin: 0 auto;
   padding: 24px;
-  width: 1016px;
+  max-width: 1016px;
   background-color: #fff;
   border-radius: 10px;
+}
+@media screen and (max-width: 375px) {
+  .respound {
+    padding: 16px;
+    max-width: 327px;
+    margin-left: 24px;
+  }
 }
 
 .respound__position {

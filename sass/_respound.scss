@@ -1,9 +1,15 @@
 .respound {
   margin: 0 auto;
   padding: 24px;
-  width: 1016px;
+  max-width: 1016px;
   background-color: #fff;
   border-radius: 10px;
+
+  @media screen and (max-width: 375px) {
+    padding: 16px;
+    max-width: 327px;
+    margin-left: 24px;
+  }
 }
 
 .respound__position {

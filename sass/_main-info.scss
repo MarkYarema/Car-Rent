@@ -38,7 +38,7 @@
   max-width: 372px;
   font-weight: 600;
   font-size: 32px;
-  line-height: 120%;
+  line-height: 38px;
   letter-spacing: -0.01em;
   color: #fff;
 
@@ -126,7 +126,7 @@
   border-radius: 10px;
 
   @media screen and (max-width: 375px) {
-    max-width: 375px;
+    max-width: 327px;
     margin-left: 0;
     padding: 16px;
     margin-top: 32px;
@@ -211,6 +211,13 @@
 
 .curent-car_text {
   margin-top: 32px;
+
+  @media screen and (max-width: 375px) {
+    margin-top: 16px;
+    font-size: 12px;
+    max-width: 295px;
+    line-height: 24px;
+  }
 }
 
 .spesification {
@@ -218,15 +225,30 @@
   gap: 44px;
   margin-top: 32px;
   margin-bottom: 68px;
+
+  @media screen and (max-width: 375px) {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    gap: 47px;
+    max-width: 295px;
+  }
 }
 
 .spesification__list {
   display: flex;
   gap: 16px;
+
+  @media screen and (max-width: 375px) {
+    gap: 24px;
+  }
 }
 
 .spesification__list li {
-  width: 92px;
+  max-width: 92px;
+
+  @media screen and (max-width: 375px) {
+    max-width: 52px;
+  }
 }
 
 .spesification__type p {
@@ -234,6 +256,16 @@
   font-size: 20px;
   letter-spacing: -0.02em;
   color: #39485e;
+
+  @media screen and (max-width: 375px) {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.01em;
+
+    &:first-child {
+      margin-bottom: 16px;
+    }
+  }
 }
 
 .choice p {
@@ -243,11 +275,20 @@
   font-size: 20px;
   letter-spacing: -0.02em;
   color: #3d5278;
+
+  @media screen and (max-width: 375px) {
+    font-size: 12px;
+    line-height: 15px;
+
+    &:first-child {
+      margin-bottom: 16px;
+    }
+  }
 }
 
 .price-information {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .new-price {
@@ -255,6 +296,11 @@
   font-size: 28px;
   line-height: 35px;
   color: #1a202c;
+
+  @media screen and (max-width: 375px) {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .new-price span {
@@ -262,6 +308,11 @@
   font-size: 16px;
   line-height: 20px;
   color: #39485e;
+
+  @media screen and (max-width: 375px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .old-price {
@@ -270,6 +321,7 @@
 }
 
 .rent-btn {
+  margin-left: auto;
   width: 140px;
   height: 56px;
   background-color: #3563e9;
@@ -281,4 +333,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+
+  @media screen and (max-width: 375px) {
+  }
 }

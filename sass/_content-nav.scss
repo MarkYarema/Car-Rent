@@ -122,4 +122,8 @@
 
 .main-information {
   padding: 32px;
+
+  @media screen and (max-width: 375px) {
+    padding: 32px 24px 24px 24px;
+  }
 }
