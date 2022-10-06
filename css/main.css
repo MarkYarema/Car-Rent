@@ -290,11 +290,14 @@ p {
   .profil {
     display: block;
     position: absolute;
-    top: 32px;
-    right: 23px;
+    top: 34px;
+    right: 25px;
   }
 }
 
+.menu {
+  display: none;
+}
 @media screen and (max-width: 375px) {
   .menu {
     display: block;
@@ -319,6 +322,18 @@ p {
   opacity: 0.8;
   border: 1px solid rgba(195, 212, 233, 0.4);
   border-radius: 90px;
+}
+@media screen and (max-width: 375px) {
+  .nav__item a {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .nav__item a img {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 .nav__icon {
@@ -351,7 +366,7 @@ p {
   padding-right: 32px;
   background-color: #fff;
 }
-@media screen and (min-width: 375px) and (max-width: 1439px) {
+@media screen and (max-width: 375px) {
   .content__nav {
     display: none;
   }
@@ -484,7 +499,7 @@ p {
 }
 @media screen and (max-width: 375px) {
   .main-information {
-    padding: 32px 24px 24px 24px;
+    padding: 32px 24px 0px 24px;
   }
 }
 
@@ -540,6 +555,7 @@ p {
   .car-img__title {
     max-width: 240px;
     font-size: 16px;
+    line-height: 19px;
   }
 }
 
@@ -556,6 +572,7 @@ p {
   .car-img__text {
     font-size: 12px;
     letter-spacing: 0;
+    line-height: 19px;
     max-width: 216px;
   }
 }
@@ -583,7 +600,6 @@ p {
 }
 @media screen and (max-width: 375px) {
   .car-img__position {
-    max-width: 100%;
     gap: 20px;
   }
   .car-img__position img {
@@ -647,6 +663,7 @@ p {
 @media screen and (max-width: 375px) {
   .curent-car__title {
     font-size: 20px;
+    margin-bottom: 8px;
   }
 }
 
@@ -666,6 +683,11 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 375px) {
+  .curent-car__star li:not(:last-child) {
+    margin-right: 4px;
+  }
 }
 
 .curent-car__star svg {
@@ -896,6 +918,11 @@ p {
   gap: 12px;
   margin-bottom: 32px;
 }
+@media screen and (max-width: 375px) {
+  .respound__position {
+    margin-bottom: 24px;
+  }
+}
 
 .respound__title {
   font-weight: 600;
@@ -937,9 +964,20 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 375px) {
+  .respound__information img {
+    max-width: 44px;
+    max-height: 44px;
+  }
+}
 
 .respound__name {
   margin-left: 16px;
+}
+@media screen and (max-width: 375px) {
+  .respound__name {
+    margin-left: 8px;
+  }
 }
 
 .name-title {
@@ -947,12 +985,28 @@ p {
   font-size: 20px;
   color: #1a202c;
 }
+@media screen and (max-width: 375px) {
+  .name-title {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+  }
+}
 
 .name-text {
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   color: #39485e;
+}
+@media screen and (max-width: 375px) {
+  .name-text {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.01em;
+    color: #90a3bf;
+  }
 }
 
 .respound__date {
@@ -968,18 +1022,44 @@ p {
           justify-content: flex-end;
   font-weight: 500;
   font-size: 14px;
+  line-height: 18px;
   color: #39485e;
+}
+@media screen and (max-width: 375px) {
+  .date {
+    font-size: 12px;
+    line-height: 15px;
+    color: #90a3bf;
+    margin-bottom: 8px;
+  }
 }
 
 .respound__text {
   width: 896px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 200%;
+  line-height: 28px;
   letter-spacing: -0.02em;
   color: #3d5278;
   margin-left: auto;
   margin-top: 12px;
+}
+.respound__text span {
+  display: none;
+}
+@media screen and (max-width: 375px) {
+  .respound__text {
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    max-width: 243px;
+    max-height: 48px;
+    overflow: hidden;
+  }
+  .respound__text span {
+    display: contents;
+  }
 }
 
 .respound__btn {
@@ -999,17 +1079,38 @@ p {
   line-height: 20px;
   color: #39485e;
 }
+@media screen and (max-width: 375px) {
+  .respound__btn {
+    font-size: 14px;
+    line-height: 18px;
+    color: #90a3bf;
+  }
+}
 
 .respound__btn svg {
   width: 16px;
   height: 16px;
   margin-left: 8px;
+  fill: #39485e;
+}
+@media screen and (max-width: 375px) {
+  .respound__btn svg {
+    width: 14px;
+    height: 14px;
+    fill: #90a3bf;
+  }
 }
 
 .recent-car {
   width: 1016px;
   margin: 0 auto;
   margin-top: 32px;
+}
+@media screen and (max-width: 375px) {
+  .recent-car {
+    max-width: 327px;
+    margin-left: 24px;
+  }
 }
 
 .recent-car__header {
@@ -1021,6 +1122,11 @@ p {
           justify-content: space-between;
   margin-bottom: 16px;
 }
+@media screen and (max-width: 375px) {
+  .recent-car__header {
+    margin-bottom: 20px;
+  }
+}
 
 .recent-car__title {
   font-weight: 600;
@@ -1029,6 +1135,14 @@ p {
   color: #39485e;
   padding-right: 20px;
   padding-left: 20px;
+}
+@media screen and (max-width: 375px) {
+  .recent-car__title {
+    font-size: 14px;
+    line-height: 18px;
+    color: #90a3bf;
+    padding: 0;
+  }
 }
 
 .recent-car__link {
@@ -1039,6 +1153,13 @@ p {
   padding-right: 20px;
   padding-left: 20px;
   text-decoration: none;
+}
+@media screen and (max-width: 375px) {
+  .recent-car__link {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0;
+  }
 }
 
 .recent-car__list {
@@ -1056,6 +1177,11 @@ p {
   position: relative;
   border-radius: 10px;
 }
+@media screen and (max-width: 375px) {
+  .recent-car__item {
+    padding: 16px;
+  }
+}
 
 .item-car__title {
   font-weight: 700;
@@ -1064,12 +1190,29 @@ p {
   color: #1a202c;
   margin-bottom: 4px;
 }
+@media screen and (max-width: 375px) {
+  .item-car__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
 
 .item-car__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   color: #39485e;
+}
+@media screen and (max-width: 375px) {
+  .item-car__text {
+    font-size: 12px;
+    line-height: 15px;
+    color: #90a3bf;
+  }
+}
+
+.like-visible {
+  display: block;
 }
 
 .recent-car__styles {

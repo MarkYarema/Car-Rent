@@ -138,12 +138,14 @@
   @media screen and (max-width: 375px) {
     display: block;
     position: absolute;
-    top: 32px;
-    right: 23px;
+    top: 34px;
+    right: 25px;
   }
 }
 
 .menu {
+  display: none;
+
   @media screen and (max-width: 375px) {
     display: block;
     position: absolute;
@@ -161,6 +163,18 @@
   opacity: 0.8;
   border: 1px solid rgba(195, 212, 233, 0.4);
   border-radius: 90px;
+
+  @media screen and (max-width: 375px) {
+    width: 28px;
+    height: 28px;
+  }
+
+  & img {
+    @media screen and (max-width: 375px) {
+      width: 28px;
+      height: 28px;
+    }
+  }
 }
 
 .nav__icon {

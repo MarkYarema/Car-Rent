@@ -17,6 +17,10 @@
   align-items: center;
   gap: 12px;
   margin-bottom: 32px;
+
+  @media screen and (max-width: 375px) {
+    margin-bottom: 24px;
+  }
 }
 
 .respound__title {
@@ -49,16 +53,32 @@
 .respound__information {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 375px) {
+    & img {
+      max-width: 44px;
+      max-height: 44px;
+    }
+  }
 }
 
 .respound__name {
   margin-left: 16px;
+
+  @media screen and (max-width: 375px) {
+    margin-left: 8px;
+  }
 }
 
 .name-title {
   font-weight: 700;
   font-size: 20px;
   color: #1a202c;
+
+  @media screen and (max-width: 375px) {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+  }
 }
 
 .name-text {
@@ -66,6 +86,14 @@
   font-size: 14px;
   line-height: 18px;
   color: #39485e;
+
+  @media screen and (max-width: 375px) {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.01em;
+    color: #90a3bf;
+  }
 }
 
 .respound__date {
@@ -77,18 +105,44 @@
   justify-content: flex-end;
   font-weight: 500;
   font-size: 14px;
+  line-height: 18px;
   color: #39485e;
+
+  @media screen and (max-width: 375px) {
+    font-size: 12px;
+    line-height: 15px;
+    color: #90a3bf;
+    margin-bottom: 8px;
+  }
 }
 
 .respound__text {
   width: 896px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 200%;
+  line-height: 28px;
   letter-spacing: -0.02em;
   color: #3d5278;
   margin-left: auto;
   margin-top: 12px;
+
+  & span {
+    display: none;
+  }
+
+  @media screen and (max-width: 375px) {
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    max-width: 243px;
+    max-height: 48px;
+    overflow: hidden;
+
+    & span {
+      display: contents;
+    }
+  }
 }
 
 .respound__btn {
@@ -104,10 +158,23 @@
   font-size: 16px;
   line-height: 20px;
   color: #39485e;
+
+  @media screen and (max-width: 375px) {
+    font-size: 14px;
+    line-height: 18px;
+    color: #90a3bf;
+  }
 }
 
 .respound__btn svg {
   width: 16px;
   height: 16px;
   margin-left: 8px;
+  fill: #39485e;
+
+  @media screen and (max-width: 375px) {
+    width: 14px;
+    height: 14px;
+    fill: #90a3bf;
+  }
 }

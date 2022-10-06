@@ -22,7 +22,7 @@
   padding-right: 32px;
   background-color: #fff;
 
-  @media screen and (min-width: 375px) and (max-width: 1439px) {
+  @media screen and (max-width: 375px) {
     display: none;
   }
 }
@@ -118,12 +118,4 @@
 
 .content__prise input {
   width: 100%;
-}
-
-.main-information {
-  padding: 32px;
-
-  @media screen and (max-width: 375px) {
-    padding: 32px 24px 24px 24px;
-  }
 }
