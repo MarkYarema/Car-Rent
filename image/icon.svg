@@ -55,5 +55,10 @@
 <symbol id="icon-nofill-heart" viewBox="0 0 32 32">
 <path fill="none" stroke="#39485e" style="stroke: var(--color1, #39485e)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M16.827 27.746c-0.453 0.16-1.2 0.16-1.653 0-3.867-1.32-12.507-6.827-12.507-16.16 0-4.12 3.32-7.453 7.413-7.453 2.427 0 4.573 1.173 5.92 2.987 1.347-1.813 3.507-2.987 5.92-2.987 4.093 0 7.413 3.333 7.413 7.453 0 9.333-8.64 14.84-12.507 16.16z"></path>
 </symbol>
+<symbol id="icon-menu" viewBox="0 0 32 32">
+<path fill="none" stroke="#3d5278" style="stroke: var(--color1, #3d5278)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M4 9.333h24"></path>
+<path fill="none" stroke="#3d5278" style="stroke: var(--color1, #3d5278)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M4 16h24"></path>
+<path fill="none" stroke="#3d5278" style="stroke: var(--color1, #3d5278)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M4 22.667h24"></path>
+</symbol>
 </defs>
 </svg>

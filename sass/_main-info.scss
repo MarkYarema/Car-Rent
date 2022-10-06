@@ -1,54 +1,97 @@
 .curent-car {
   display: flex;
   margin-bottom: 32px;
+
+  @media screen and (max-width: 375px) {
+    display: block;
+  }
 }
 
 /* img */
 
 .car-img {
   margin-right: 32px;
+
+  @media screen and (max-width: 375px) {
+    max-width: 327px;
+  }
 }
 
 .car-img__main {
-  width: 492px;
+  max-width: 492px;
   height: 360px;
   border-radius: 10px;
   background: #3563e9;
   padding-top: 24px;
   padding-left: 24px;
   position: relative;
+
+  @media screen and (max-width: 375px) {
+    max-width: 327px;
+    max-height: 232px;
+    padding-top: 16px;
+    padding-left: 16px;
+  }
 }
 
 .car-img__title {
-  width: 372px;
+  max-width: 372px;
   font-weight: 600;
   font-size: 32px;
   line-height: 120%;
   letter-spacing: -0.01em;
   color: #fff;
+
+  @media screen and (max-width: 375px) {
+    max-width: 240px;
+    font-size: 16px;
+  }
 }
 
 .car-img__text {
   margin-top: 16px;
 
-  width: 284px;
+  max-width: 284px;
   font-weight: 500;
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0.02em;
   color: #fff;
+
+  @media screen and (max-width: 375px) {
+    font-size: 12px;
+    letter-spacing: 0;
+    max-width: 216px;
+  }
 }
 
 .car-img__main img {
   position: absolute;
   bottom: 24px;
   left: 56px;
+
+  @media screen and (max-width: 375px) {
+    max-width: 190px;
+    max-height: 60px;
+    bottom: 20px;
+    left: 69px;
+  }
 }
 
 .car-img__position {
   display: flex;
   gap: 24px;
   margin-top: 24px;
+
+  @media screen and (max-width: 375px) {
+    max-width: 100%;
+    gap: 20px;
+
+    & img {
+      max-width: 96px;
+      max-height: 64px;
+    }
+  }
 }
 
 .car-img__secondary {
@@ -59,6 +102,17 @@
   height: 124px;
   border: 2px solid #3563e9;
   border-radius: 10px;
+
+  @media screen and (max-width: 375px) {
+    max-width: 96px;
+    max-height: 64px;
+    border: 1.5px solid #3563e9;
+    border-radius: 10px;
+    & img {
+      max-width: 88px;
+      max-height: 56px;
+    }
+  }
 }
 
 /* details */
@@ -70,6 +124,13 @@
   padding: 24px 24px 32px 24px;
   width: 492px;
   border-radius: 10px;
+
+  @media screen and (max-width: 375px) {
+    max-width: 375px;
+    margin-left: 0;
+    padding: 16px;
+    margin-top: 32px;
+  }
 }
 
 .curent-car__title {
@@ -77,6 +138,10 @@
   font-size: 32px;
   line-height: 140%;
   color: #1a202c;
+
+  @media screen and (max-width: 375px) {
+    font-size: 20px;
+  }
 }
 
 .curent-car__reviewer {
@@ -92,11 +157,30 @@
 .curent-car__star svg {
   width: 20px;
   height: 20px;
+
+  @media screen and (max-width: 375px) {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 .curent-car__star li {
   display: flex;
   align-items: center;
+
+  & svg:first-child {
+    display: none;
+
+    @media screen and (max-width: 375px) {
+      display: block;
+    }
+  }
+
+  & svg:last-child {
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
+  }
 }
 
 .reviewer-text {
@@ -106,6 +190,11 @@
   line-height: 18px;
   letter-spacing: 0.02em;
   color: #3d5278;
+
+  @media screen and (max-width: 375px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .curent-car__like {
@@ -114,6 +203,10 @@
   position: absolute;
   top: 24px;
   right: 24px;
+
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
 }
 
 .curent-car_text {

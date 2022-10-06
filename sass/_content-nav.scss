@@ -3,6 +3,11 @@
   margin: 0 auto;
 
   width: 1440px;
+
+  @media screen and (max-width: 375px) {
+    max-width: 375px;
+    margin: 0 auto;
+  }
 }
 
 .content__container {
@@ -16,6 +21,10 @@
   padding-top: 32px;
   padding-right: 32px;
   background-color: #fff;
+
+  @media screen and (min-width: 375px) and (max-width: 1439px) {
+    display: none;
+  }
 }
 
 .content__item:not(:last-child) {

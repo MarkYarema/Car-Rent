@@ -31,20 +31,24 @@ p {
 }
 
 .container {
-  width: 1080px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
 .header {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
   padding: 32px;
-  width: 1440px;
+  min-width: 1440px;
 }
 
 .header__title {
