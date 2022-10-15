@@ -776,7 +776,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 44px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 32px;
   margin-bottom: 68px;
 }
