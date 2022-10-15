@@ -27,6 +27,11 @@
 .styles-crv {
   margin-bottom: 43px;
   margin-top: 43px;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    margin-top: 16px;
+    margin-bottom: 52px;
+  }
 }
 
 .recomendation-car__background {
@@ -41,12 +46,12 @@
 
 .background__crv {
   top: 51px;
+}
 
-  & .car-crv {
-    @media screen and (min-width: 375px) and (max-width: 767px) {
-      width: 160px;
-      height: 64px;
-    }
+.car__crv {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    width: 160px;
+    height: 64px;
   }
 }
 
