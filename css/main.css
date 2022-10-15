@@ -361,6 +361,7 @@ p {
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .content__container {
     max-width: 375px;
+    overflow: hidden;
   }
 }
 
@@ -1187,6 +1188,8 @@ p {
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .recent-car__item {
     padding: 16px;
+    max-height: 286px;
+    margin-right: 19px;
   }
 }
 
@@ -1228,10 +1231,22 @@ p {
   margin-bottom: 52px;
   margin-top: 52px;
 }
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .recent-car__styles {
+    margin-top: 32px;
+    margin-bottom: 44px;
+  }
+}
 
 .styles-gtr {
   margin-top: 58px;
   margin-bottom: 58px;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .styles-gtr {
+    margin-top: 32px;
+    margin-bottom: 44px;
+  }
 }
 
 .styles-rr {
@@ -1242,6 +1257,12 @@ p {
 .recent-car__list img {
   display: block;
   margin: 0 auto;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .recent-car__list img {
+    width: 180px;
+    height: 56px;
+  }
 }
 
 .recent-car__background {
@@ -1255,9 +1276,33 @@ p {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .recent-car__background {
+    width: 240px;
+    height: 44px;
+    top: 24px;
+  }
+}
 
 .background__gtr {
   top: 36px;
+}
+
+.background__horizontal {
+  display: none;
+  position: absolute;
+  width: 96px;
+  height: 286px;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, right top, left top, from(#ffffff), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 2;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .background__horizontal {
+    display: block;
+  }
 }
 
 .background__rr {
@@ -1273,6 +1318,11 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .recent-car__informatoin {
+    width: 204px;
+  }
+}
 
 .car-information__list {
   display: -webkit-box;
@@ -1287,6 +1337,30 @@ p {
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  fill: #39485e;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .car-information__list svg {
+    width: 14px;
+    height: 14px;
+    fill: #90a3bf;
+    margin-right: 4px;
+  }
+}
+
+.car__mob {
+  display: none;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .car__mob {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .car__desk {
+    display: none;
+  }
 }
 
 .car-information__list p {
@@ -1294,6 +1368,13 @@ p {
   font-size: 14px;
   line-height: 18px;
   color: #39485e;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .car-information__list p {
+    color: #90a3bf;
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .recent-car__final {
@@ -1308,6 +1389,11 @@ p {
           align-items: center;
   margin-top: 36px;
 }
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .recent-car__final {
+    margin-top: 28px;
+  }
+}
 
 .recent-car__text {
   font-weight: 700;
@@ -1315,12 +1401,26 @@ p {
   line-height: 25px;
   color: #1a202c;
 }
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .recent-car__text {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+  }
+}
 
 .recent-car__text span {
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   color: #39485e;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .recent-car__text span {
+    font-size: 12px;
+    line-height: 15px;
+    color: #90a3bf;
+  }
 }
 
 .recent-car__btn {
@@ -1335,6 +1435,14 @@ p {
   color: #ffffff;
   cursor: pointer;
 }
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .recent-car__btn {
+    width: 100px;
+    height: 36px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
 
 .recomendation-car {
   width: 1016px;
@@ -1342,9 +1450,19 @@ p {
   margin-top: 32px;
   margin-bottom: 32px;
 }
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .recomendation-car {
+    width: 327px;
+  }
+}
 
 .recomendation-car h3 {
   color: var(--accent-color);
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .recomendation-car h3 {
+    color: #90a3bf;
+  }
 }
 
 .recomendation-car__styles {
@@ -1373,6 +1491,18 @@ p {
 
 .background__crv {
   top: 51px;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .background__crv .car-crv {
+    width: 160px;
+    height: 64px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .mob-hiden {
+    display: none;
+  }
 }
 
 .footer__container {

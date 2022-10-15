@@ -64,6 +64,8 @@
 
   @media screen and (min-width: 375px) and (max-width: 767px) {
     padding: 16px;
+    max-height: 286px;
+    margin-right: 19px;
   }
 }
 
@@ -102,11 +104,21 @@
   overflow: hidden;
   margin-bottom: 52px;
   margin-top: 52px;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    margin-top: 32px;
+    margin-bottom: 44px;
+  }
 }
 
 .styles-gtr {
   margin-top: 58px;
   margin-bottom: 58px;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    margin-top: 32px;
+    margin-bottom: 44px;
+  }
 }
 
 .styles-rr {
@@ -117,6 +129,11 @@
 .recent-car__list img {
   display: block;
   margin: 0 auto;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    width: 180px;
+    height: 56px;
+  }
 }
 
 .recent-car__background {
@@ -127,10 +144,31 @@
   top: 42px;
   left: 50%;
   transform: translateX(-50%);
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    width: 240px;
+    height: 44px;
+    top: 24px;
+  }
 }
 
 .background__gtr {
   top: 36px;
+}
+
+.background__horizontal {
+  display: none;
+  position: absolute;
+  width: 96px;
+  height: 286px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 2;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    display: block;
+  }
 }
 
 .background__rr {
@@ -141,6 +179,10 @@
   display: flex;
   width: 269px;
   justify-content: space-between;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    width: 204px;
+  }
 }
 
 .car-information__list {
@@ -152,6 +194,28 @@
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  fill: #39485e;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    width: 14px;
+    height: 14px;
+    fill: #90a3bf;
+    margin-right: 4px;
+  }
+}
+
+.car__mob {
+  display: none;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    display: block;
+  }
+}
+
+.car__desk {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .car-information__list p {
@@ -159,6 +223,12 @@
   font-size: 14px;
   line-height: 18px;
   color: #39485e;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    color: #90a3bf;
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .recent-car__final {
@@ -166,6 +236,10 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 36px;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    margin-top: 28px;
+  }
 }
 
 .recent-car__text {
@@ -173,6 +247,12 @@
   font-size: 20px;
   line-height: 25px;
   color: #1a202c;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+  }
 }
 
 .recent-car__text span {
@@ -180,6 +260,12 @@
   font-size: 14px;
   line-height: 18px;
   color: #39485e;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 15px;
+    color: #90a3bf;
+  }
 }
 
 .recent-car__btn {
@@ -194,4 +280,12 @@
   line-height: 20px;
   color: #ffffff;
   cursor: pointer;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    width: 100px;
+    height: 36px;
+
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
