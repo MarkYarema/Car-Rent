@@ -4,7 +4,7 @@
 
   width: 1440px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
     max-width: 375px;
     margin: 0 auto;
   }
@@ -12,6 +12,10 @@
 
 .content__container {
   background-color: #f6f7f9;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    max-width: 375px;
+  }
 }
 
 /* Content__nav */
@@ -22,7 +26,7 @@
   padding-right: 32px;
   background-color: #fff;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
     display: none;
   }
 }

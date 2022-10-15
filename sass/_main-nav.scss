@@ -1,7 +1,7 @@
 .main-nav {
   margin-top: 100px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
     margin-top: 0%;
   }
 }
@@ -16,7 +16,7 @@
   padding: 40px 32px 40px 60px;
   max-width: 1440px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
     padding: 32px 23px 32px 25px;
     display: block;
     max-width: 375px;
@@ -33,7 +33,7 @@
   letter-spacing: 1px;
   margin-right: 64px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
     display: block;
     margin-right: 0px;
     margin-top: 90px;
@@ -44,7 +44,7 @@
 .nav_input {
   position: relative;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
     display: flex;
     align-items: center;
   }
@@ -58,7 +58,7 @@
   border-radius: 70px;
   padding: 0px 64px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
     width: 263px;
     padding: 12px 40px 12px 56px;
     display: flex;
@@ -82,13 +82,13 @@
   left: 20px;
   transform: translateY(-50%);
 
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
     left: 24px;
   }
 }
 
 .nav__filter-position {
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
     border: 1px solid rgba(195, 212, 233, 0.4);
     border-radius: 10px;
     width: 48px;
@@ -108,7 +108,7 @@
   top: 50%;
   transform: translateY(-50%);
 
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
     position: relative;
     top: 0;
     right: 0;
@@ -129,13 +129,13 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
     display: none;
   }
 }
 
 .profil {
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
     display: block;
     position: absolute;
     top: 34px;
@@ -146,7 +146,7 @@
 .menu {
   display: none;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
     display: block;
     position: absolute;
     top: 34px;
@@ -164,13 +164,13 @@
   border: 1px solid rgba(195, 212, 233, 0.4);
   border-radius: 90px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
     width: 28px;
     height: 28px;
   }
 
   & img {
-    @media screen and (max-width: 375px) {
+    @media screen and (min-width: 375px) and (max-width: 767px) {
       width: 28px;
       height: 28px;
     }
