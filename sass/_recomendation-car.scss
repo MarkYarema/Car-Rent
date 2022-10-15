@@ -6,6 +6,8 @@
 
   @media screen and (min-width: 375px) and (max-width: 767px) {
     width: 327px;
+    margin-bottom: 0;
+    padding-bottom: 24px;
   }
 }
 
@@ -58,5 +60,12 @@
 .mob-hiden {
   @media screen and (min-width: 375px) and (max-width: 767px) {
     display: none;
+  }
+}
+
+.car__terios {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    margin-top: 16px;
+    margin-bottom: 52px;
   }
 }

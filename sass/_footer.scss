@@ -1,6 +1,12 @@
 .footer__container {
   max-width: 1440px;
   padding: 80px 60px 60px 60px;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    max-width: 375px;
+    background-color: #f6f7f9;
+    padding: 24px;
+  }
 }
 
 .footer__info {
@@ -8,10 +14,29 @@
   justify-content: space-between;
   position: relative;
   margin-bottom: 108px;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    display: block;
+    margin-bottom: 48px;
+  }
 }
 
 .footer__logo {
   width: 292px;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    width: 216px;
+    margin-bottom: 48px;
+  }
+}
+
+.final__logo {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
 }
 
 .footer__logo-text {
@@ -21,11 +46,22 @@
   line-height: 200%;
   letter-spacing: -0.01em;
   color: rgba(19, 19, 19, 0.6);
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 24px;
+    color: #90a3bf;
+  }
 }
 
 .footer__list {
   display: flex;
   gap: 60px;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    flex-wrap: wrap;
+    gap: 43px;
+  }
 }
 
 .footer__list h4 {
@@ -34,10 +70,19 @@
   line-height: 120%;
   color: #131313;
   margin-bottom: 24px;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    margin-bottom: 16px;
+    color: #1a202c;
+  }
 }
 
 .footer_link {
   width: 152px;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    width: 142px;
+  }
 }
 
 .footer_link a {
@@ -46,6 +91,10 @@
   font-size: 16px;
   line-height: 120%;
   color: rgba(19, 19, 19, 0.6);
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    color: #90a3bf;
+  }
 }
 
 .footer__info::after {
@@ -57,6 +106,10 @@
   height: 1px;
   background-color: rgba(19, 19, 19, 0.16);
   border-radius: 2px;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .footer__end {
@@ -67,12 +120,25 @@
   line-height: 200%;
   letter-spacing: -0.01em;
   color: #131313;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 24px;
+    color: #1a202c;
+    flex-wrap: wrap-reverse;
+  }
 }
 
 .end__link {
   display: flex;
   gap: 60px;
   margin-left: auto;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    gap: 70px;
+    margin: 0;
+    margin-bottom: 32px;
+  }
 }
 
 .end__link a {
